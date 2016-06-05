@@ -32,7 +32,7 @@ describe('CountdownForm', () => {
       countdownForm.refs.seconds.value ='MAX';
       TestUtils.Simulate.submit($el.find('form')[0]);
 
-      expect(spy).toHaveBeenCalledWith();
+      expect(spy).toNotHaveBeenCalled();
   });
 
 });
